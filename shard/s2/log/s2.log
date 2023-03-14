@@ -1,0 +1,113 @@
+2023-03-14T13:28:25.624+0000 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2023-03-14T13:28:26.142+0000 W  ASIO     [main] No TransportLayer configured during NetworkInterface startup
+2023-03-14T13:28:26.143+0000 I  CONTROL  [initandlisten] MongoDB starting : pid=2876 port=27033 dbpath=\data\shard\s2 64-bit host=DESKTOP-9V258QU
+2023-03-14T13:28:26.144+0000 I  CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2023-03-14T13:28:26.144+0000 I  CONTROL  [initandlisten] db version v4.2.24
+2023-03-14T13:28:26.144+0000 I  CONTROL  [initandlisten] git version: 5e4ec1d24431fcdd28b579a024c5c801b8cde4e2
+2023-03-14T13:28:26.144+0000 I  CONTROL  [initandlisten] allocator: tcmalloc
+2023-03-14T13:28:26.152+0000 I  CONTROL  [initandlisten] modules: none
+2023-03-14T13:28:26.153+0000 I  CONTROL  [initandlisten] build environment:
+2023-03-14T13:28:26.153+0000 I  CONTROL  [initandlisten]     distmod: 2012plus
+2023-03-14T13:28:26.153+0000 I  CONTROL  [initandlisten]     distarch: x86_64
+2023-03-14T13:28:26.153+0000 I  CONTROL  [initandlisten]     target_arch: x86_64
+2023-03-14T13:28:26.153+0000 I  CONTROL  [initandlisten] options: { net: { port: 27033 }, sharding: { clusterRole: "shardsvr" }, storage: { dbPath: "\data\shard\s2" }, systemLog: { destination: "file", path: "\data\shard\s2\log\s2.log" } }
+2023-03-14T13:28:26.164+0000 W  STORAGE  [initandlisten] Detected unclean shutdown - \data\shard\s2\mongod.lock is not empty.
+2023-03-14T13:28:26.167+0000 I  STORAGE  [initandlisten] Detected data files in \data\shard\s2 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2023-03-14T13:28:26.167+0000 W  STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2023-03-14T13:28:26.167+0000 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3528M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2023-03-14T13:28:26.235+0000 I  STORAGE  [initandlisten] WiredTiger message [1678800506:234213][2876:140711009344304], txn-recover: Recovering log 1 through 2
+2023-03-14T13:28:26.321+0000 I  STORAGE  [initandlisten] WiredTiger message [1678800506:320976][2876:140711009344304], txn-recover: Recovering log 2 through 2
+2023-03-14T13:28:26.407+0000 I  STORAGE  [initandlisten] WiredTiger message [1678800506:406747][2876:140711009344304], txn-recover: Main recovery loop: starting at 1/1026304 to 2/256
+2023-03-14T13:28:26.542+0000 I  STORAGE  [initandlisten] WiredTiger message [1678800506:541910][2876:140711009344304], txn-recover: Recovering log 1 through 2
+2023-03-14T13:28:26.630+0000 I  STORAGE  [initandlisten] WiredTiger message [1678800506:630194][2876:140711009344304], txn-recover: Recovering log 2 through 2
+2023-03-14T13:28:26.702+0000 I  STORAGE  [initandlisten] WiredTiger message [1678800506:701956][2876:140711009344304], txn-recover: Set global recovery timestamp: (0, 0)
+2023-03-14T13:28:26.722+0000 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2023-03-14T13:28:26.752+0000 I  STORAGE  [initandlisten] Timestamp monitor starting
+2023-03-14T13:28:26.756+0000 I  CONTROL  [initandlisten] 
+2023-03-14T13:28:26.756+0000 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2023-03-14T13:28:26.756+0000 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2023-03-14T13:28:26.757+0000 I  CONTROL  [initandlisten] 
+2023-03-14T13:28:26.757+0000 I  CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2023-03-14T13:28:26.757+0000 I  CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2023-03-14T13:28:26.757+0000 I  CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2023-03-14T13:28:26.758+0000 I  CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2023-03-14T13:28:26.758+0000 I  CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2023-03-14T13:28:26.758+0000 I  CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2023-03-14T13:28:26.758+0000 I  CONTROL  [initandlisten] 
+2023-03-14T13:28:26.794+0000 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2023-03-14T13:28:26.795+0000 I  SHARDING [initandlisten] initializing sharding state with: { shardName: "shard0002", clusterId: ObjectId('640f2d88d54f47b7789493e3'), configsvrConnectionString: "myRepl/localhost:27021,localhost:27022,localhost:27023" }
+2023-03-14T13:28:26.798+0000 I  NETWORK  [initandlisten] Starting new replica set monitor for myRepl/localhost:27021,localhost:27022,localhost:27023
+2023-03-14T13:28:26.799+0000 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Connecting to localhost:27022
+2023-03-14T13:28:26.799+0000 I  SHARDING [thread1] creating distributed lock ping thread for process DESKTOP-9V258QU:27033:1678800506:7901920551585841614 (sleeping for 30000ms)
+2023-03-14T13:28:26.799+0000 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Connecting to localhost:27021
+2023-03-14T13:28:26.799+0000 I  SHARDING [initandlisten] Finished initializing sharding components for primary node.
+2023-03-14T13:28:26.800+0000 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Connecting to localhost:27023
+2023-03-14T13:28:26.808+0000 I  NETWORK  [ReplicaSetMonitor-TaskExecutor] Confirmed replica set for myRepl is myRepl/localhost:27021,localhost:27022,localhost:27023
+2023-03-14T13:28:26.809+0000 I  SHARDING [Sharding-Fixed-0] Updating config server with confirmed set myRepl/localhost:27021,localhost:27022,localhost:27023
+2023-03-14T13:28:26.813+0000 I  SHARDING [ShardRegistry] Received reply from config server node (unknown) indicating config server optime term has increased, previous optime { ts: Timestamp(0, 0), t: -1 }, now { ts: Timestamp(1678800500, 1), t: 11 }
+2023-03-14T13:28:26.819+0000 W  SHARDING [replSetDistLockPinger] pinging failed for distributed lock pinger :: caused by :: LockStateChangeFailed: findAndModify query predicate didn't match any lock document
+2023-03-14T13:28:27.399+0000 W  FTDC     [initandlisten] Failed to initialize Performance Counters for FTDC: WindowsPdhError: PdhExpandCounterPathW failed with 'L’objet spécifié n’a pas été trouvé sur l’ordinateur.' for counter '\Processor(_Total)\% Idle Time'
+2023-03-14T13:28:27.399+0000 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/shard/s2/diagnostic.data'
+2023-03-14T13:28:27.401+0000 I  SHARDING [initandlisten] Sharding state recovery process found document { _id: "minOpTimeRecovery", minOpTime: { ts: Timestamp(1678721814, 7), t: 4 }, minOpTimeUpdaters: 0 }
+2023-03-14T13:28:27.403+0000 I  SH_REFR  [ShardServerCatalogCacheLoader-0] Refresh for database config from version {} to version { uuid: UUID("7bedbbcf-24bd-44a8-9eec-a827d0867565"), lastMod: 0 } took 0 ms
+2023-03-14T13:28:27.404+0000 I  NETWORK  [listener] Listening on 127.0.0.1
+2023-03-14T13:28:27.404+0000 I  NETWORK  [listener] waiting for connections on port 27033
+2023-03-14T13:28:27.475+0000 I  SH_REFR  [ConfigServerCatalogCacheLoader-0] Refresh for collection config.system.sessions to version 683|1||640f390417a87988661c5a16 took 70 ms
+2023-03-14T13:28:27.484+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:49650 #9 (1 connection now open)
+2023-03-14T13:28:27.485+0000 I  NETWORK  [conn9] received client metadata from 127.0.0.1:49650 conn9: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-14T13:28:27.655+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:49661 #10 (2 connections now open)
+2023-03-14T13:28:27.656+0000 I  NETWORK  [conn10] received client metadata from 127.0.0.1:49661 conn10: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-14T13:28:27.732+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:49651 #11 (3 connections now open)
+2023-03-14T13:28:27.733+0000 I  NETWORK  [conn11] received client metadata from 127.0.0.1:49651 conn11: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-14T13:28:27.871+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:49652 #12 (4 connections now open)
+2023-03-14T13:28:27.877+0000 I  NETWORK  [conn12] received client metadata from 127.0.0.1:49652 conn12: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-14T13:28:28.045+0000 I  FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2023-03-14T13:29:26.815+0000 I  CONNPOOL [ShardRegistry] Ending idle connection to host localhost:27021 because the pool meets constraints; 2 connections to that host remain open
+2023-03-14T13:29:26.816+0000 I  CONNPOOL [ShardRegistry] Ending idle connection to host localhost:27021 because the pool meets constraints; 1 connections to that host remain open
+2023-03-14T13:30:52.556+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:49696 #13 (5 connections now open)
+2023-03-14T13:30:52.556+0000 I  NETWORK  [conn13] received client metadata from 127.0.0.1:49696 conn13: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-14T13:31:04.257+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:49707 #14 (6 connections now open)
+2023-03-14T13:31:04.257+0000 I  NETWORK  [conn14] received client metadata from 127.0.0.1:49707 conn14: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-14T13:31:05.551+0000 I  SH_REFR  [ConfigServerCatalogCacheLoader-1] Refresh for database country from version {} to version { uuid: UUID("29a17ef7-6bb6-4267-a393-cc5fa792a1c3"), lastMod: 1 } took 3 ms
+2023-03-14T13:31:05.656+0000 I  WRITE    [ShardServerCatalogCacheLoader-1] update config.cache.databases command: { q: { _id: "country" }, u: { $set: { _id: "country", primary: "shard0002", partitioned: true, version: { uuid: UUID("29a17ef7-6bb6-4267-a393-cc5fa792a1c3"), lastMod: 1 } } }, multi: false, upsert: true } planSummary: IDHACK keysExamined:1 docsExamined:1 nMatched:1 nModified:0 numYields:1 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 2 } }, ReplicationStateTransition: { acquireCount: { w: 2 } }, Global: { acquireCount: { w: 2 } }, Database: { acquireCount: { w: 2 } }, Collection: { acquireCount: { w: 2 } }, Mutex: { acquireCount: { r: 1 } } } flowControl:{ acquireCount: 2, timeAcquiringMicros: 5 } storage:{ data: { bytesRead: 313, timeReadingMicros: 992 }, timeWaitingMicros: { schemaLock: 30918 } } 103ms
+2023-03-14T13:31:05.657+0000 I  COMMAND  [ShardServerCatalogCacheLoader-1] command config.$cmd command: update { update: "cache.databases", bypassDocumentValidation: false, ordered: true, $db: "config" } numYields:1 reslen:121 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 2 } }, ReplicationStateTransition: { acquireCount: { w: 3 } }, Global: { acquireCount: { r: 1, w: 2 } }, Database: { acquireCount: { w: 2 } }, Collection: { acquireCount: { w: 2 } }, Mutex: { acquireCount: { r: 1 } } } flowControl:{ acquireCount: 2, timeAcquiringMicros: 5 } storage:{} protocol:op_msg 104ms
+2023-03-14T13:31:05.675+0000 I  COMMAND  [ShardServerCatalogCacheLoader-2] command config.cache.chunks.country.countries command: find { find: "cache.chunks.country.countries", sort: { lastmod: -1 }, ntoreturn: 1, singleBatch: true, $db: "config" } planSummary: IXSCAN { lastmod: 1 } keysExamined:1 docsExamined:1 cursorExhausted:1 numYields:0 nreturned:1 queryHash:12B08417 planCacheKey:12B08417 reslen:336 locks:{ ReplicationStateTransition: { acquireCount: { w: 1 } }, Global: { acquireCount: { r: 1 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 1 } }, Mutex: { acquireCount: { r: 1 } } } storage:{ data: { bytesRead: 1671 }, timeWaitingMicros: { schemaLock: 62761 } } protocol:op_msg 114ms
+2023-03-14T13:31:05.680+0000 I  SH_REFR  [ConfigServerCatalogCacheLoader-1] Refresh for collection country.countries to version 4|1||640f3c9dab7377b8ce80e908 took 125 ms
+2023-03-14T13:31:05.680+0000 I  SHARDING [conn12] Marking collection country.countries as collection version: 4|1||640f3c9dab7377b8ce80e908, shard version: 2|1||640f3c9dab7377b8ce80e908
+2023-03-14T13:31:05.680+0000 I  COMMAND  [conn12] command country.countries command: aggregate { aggregate: "countries", pipeline: [ { $indexStats: {} }, { $match: { spec: { $exists: true } } }, { $group: { _id: { $const: null }, indexDoc: { $push: "$$ROOT" }, allShards: { $addToSet: "$shard" } } } ], fromMongos: true, needsMerge: true, mergeByPBRT: false, collation: { locale: "simple" }, cursor: { batchSize: 0 }, runtimeConstants: { localNow: new Date(1678800665533), clusterTime: Timestamp(1678800664, 1) }, useNewUpsert: true, allowImplicitCollectionCreation: true, shardVersion: [ Timestamp(2, 1), ObjectId('640f3c9dab7377b8ce80e908') ], $readPreference: { mode: "nearest" }, $clusterTime: { clusterTime: Timestamp(1678800664, 1), signature: { hash: BinData(0, 632FAA6FF14B7FDCAA84192640BA10359EBF67A0), keyId: 7210031590582255629 } }, $configServerState: { opTime: { ts: Timestamp(1678800664, 1), t: 11 } }, $db: "country" } numYields:0 ok:0 errMsg:"epoch mismatch detected for country.countries, the collection may have been dropped and recreated" errName:StaleConfig errCode:13388 reslen:361 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 3 } }, ReplicationStateTransition: { acquireCount: { w: 4 } }, Global: { acquireCount: { r: 3, w: 1 } }, Database: { acquireCount: { r: 3, w: 1 } }, Collection: { acquireCount: { r: 3, w: 1 } }, Mutex: { acquireCount: { r: 5, W: 1 } } } flowControl:{ acquireCount: 1, timeAcquiringMicros: 1 } protocol:op_msg 144ms
+2023-03-14T13:31:19.620+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:49718 #15 (7 connections now open)
+2023-03-14T13:31:19.621+0000 I  NETWORK  [conn15] received client metadata from 127.0.0.1:49718 conn15: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-14T13:35:52.571+0000 I  NETWORK  [conn13] end connection 127.0.0.1:49696 (6 connections now open)
+2023-03-14T13:35:57.957+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:49731 #16 (7 connections now open)
+2023-03-14T13:35:57.958+0000 I  NETWORK  [conn16] received client metadata from 127.0.0.1:49731 conn16: { driver: { name: "MongoDB Internal Client", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-14T13:36:04.261+0000 I  NETWORK  [conn14] end connection 127.0.0.1:49707 (6 connections now open)
+2023-03-14T13:36:19.631+0000 I  NETWORK  [conn15] end connection 127.0.0.1:49718 (5 connections now open)
+2023-03-14T13:38:27.415+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27032
+2023-03-14T13:40:58.484+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:49767 #18 (6 connections now open)
+2023-03-14T13:40:58.485+0000 I  NETWORK  [conn18] received client metadata from 127.0.0.1:49767 conn18: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-14T13:40:58.487+0000 I  NETWORK  [conn11] end connection 127.0.0.1:49651 (5 connections now open)
+2023-03-14T13:43:27.422+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27032 due to ShutdownInProgress: Pool for localhost:27032 has expired.
+2023-03-14T13:45:42.052+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:57462 #19 (6 connections now open)
+2023-03-14T13:45:42.054+0000 I  NETWORK  [conn19] received client metadata from 127.0.0.1:57462 conn19: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-14T13:45:42.054+0000 I  NETWORK  [conn10] end connection 127.0.0.1:49661 (5 connections now open)
+2023-03-14T14:00:42.052+0000 I  NETWORK  [conn19] end connection 127.0.0.1:57462 (4 connections now open)
+2023-03-14T14:00:42.054+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:57489 #20 (5 connections now open)
+2023-03-14T14:00:42.055+0000 I  NETWORK  [conn20] received client metadata from 127.0.0.1:57489 conn20: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-14T14:10:58.486+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:57506 #21 (6 connections now open)
+2023-03-14T14:10:58.486+0000 I  NETWORK  [conn18] end connection 127.0.0.1:49767 (5 connections now open)
+2023-03-14T14:10:58.487+0000 I  NETWORK  [conn21] received client metadata from 127.0.0.1:57506 conn21: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-14T14:25:42.055+0000 I  NETWORK  [conn20] end connection 127.0.0.1:57489 (4 connections now open)
+2023-03-14T14:25:42.061+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:55705 #22 (5 connections now open)
+2023-03-14T14:25:42.063+0000 I  NETWORK  [conn22] received client metadata from 127.0.0.1:55705 conn22: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-14T14:25:58.488+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:55708 #23 (6 connections now open)
+2023-03-14T14:25:58.488+0000 I  NETWORK  [conn21] end connection 127.0.0.1:57506 (5 connections now open)
+2023-03-14T14:25:58.490+0000 I  NETWORK  [conn23] received client metadata from 127.0.0.1:55708 conn23: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-14T14:30:29.279+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:49932 #24 (6 connections now open)
+2023-03-14T14:30:29.280+0000 I  NETWORK  [conn24] received client metadata from 127.0.0.1:49932 conn24: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-14T14:30:29.281+0000 I  NETWORK  [conn12] end connection 127.0.0.1:49652 (5 connections now open)
+2023-03-14T14:35:58.485+0000 I  NETWORK  [conn23] end connection 127.0.0.1:55708 (4 connections now open)
+2023-03-14T14:35:58.488+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:49935 #25 (5 connections now open)
+2023-03-14T14:35:58.489+0000 I  NETWORK  [conn25] received client metadata from 127.0.0.1:49935 conn25: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-14T14:50:42.058+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:50074 #26 (6 connections now open)
+2023-03-14T14:50:42.061+0000 I  NETWORK  [conn22] end connection 127.0.0.1:55705 (5 connections now open)
+2023-03-14T14:50:42.063+0000 I  NETWORK  [conn26] received client metadata from 127.0.0.1:50074 conn26: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
